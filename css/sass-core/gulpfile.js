@@ -3,7 +3,8 @@ var sass = require('gulp-sass');
 
 gulp.task('sass', function() {
   return gulp.src('./sass-main/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    // .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({outputStyle: 'compact'}))
     .pipe(gulp.dest('../../css'));
 });
 
